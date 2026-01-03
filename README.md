@@ -3,23 +3,6 @@
 This repository implements a **federated learning framework** in PyTorch with support for **Byzantine (faulty or malicious) clients** and multiple **robust aggregation strategies**.
 The system is intentionally designed for **CPU-based parallel client training** using `joblib`, ensuring correctness, reproducibility, and multiprocessing safety.
 
-## 📁 Project Structure
-.
-├── main.py                  # Entry point (training loop)
-├── data/
-│   ├── train/               # Training client data (JSON)
-│   └── test/                # Test client data (JSON)
-└── federated/
-    ├── config.py            # Experiment-level configuration
-    ├── optim_config.py      # Optimizer definitions
-    ├── fedbase.py           # Server and Clients classes
-    ├── client.py            # Client-side local training logic
-    ├── aggregation.py       # Aggregation algorithms
-    ├── autogm.py            # Auto-GM implementation
-    ├── model_definition.py  # CNN model architecture
-    └── data_utils.py        # Dataset loading and caching
----
-
 ## 🔍 Key Features
 * **Federated Learning (FL)** with server–client architecture
 * **Byzantine fault simulation**
